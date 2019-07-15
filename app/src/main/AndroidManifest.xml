@@ -11,9 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Profile"></activity>
-        <activity android:name=".Activity.About_ALC" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.Profile"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.About_ALC"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

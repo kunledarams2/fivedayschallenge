@@ -8,11 +8,11 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="412dp"
+        android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="0dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="0dp"
         android:layout_marginRight="8dp"
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,9 +23,9 @@
         app:titleTextColor="#fff" />
 
     <WebView
-        android:id="@+id/about_Website"
+        android:id="@+id/about_webview"
         android:layout_width="match_parent"
-        android:layout_height="800dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginEnd="0dp"
@@ -35,5 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar2">
 
     </WebView>
+
+
 
 </android.support.constraint.ConstraintLayout>
