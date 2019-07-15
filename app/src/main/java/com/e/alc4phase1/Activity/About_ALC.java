@@ -33,6 +33,7 @@ public class About_ALC extends AppCompatActivity {
 
         webView=findViewById(R.id.about_webview);
 
+        // setting the webview to support web parameter
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(true);
@@ -56,7 +57,14 @@ public class About_ALC extends AppCompatActivity {
         webView.loadUrl(about_Url);
 
 
-        toolbar=findViewById(R.id.toolbar2);
+        /**
+         * toolbar to handle nevigation back to homepage
+         * also addflags to remove and clear open activity from the stack
+         * **/
+        /**
+         * toolbar to handle nevigation back to homepage
+         * also addflags to remove and clear open activity from the stack
+         * **/toolbar=findViewById(R.id.toolbar2);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

@@ -17,6 +17,11 @@ public class Profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         toolbar=findViewById(R.id.toolBar);
+
+        /**
+         * toolbar to handle nevigation back to homepage
+         * also addflags to remove and clear open activity from the stack
+         * **/
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
